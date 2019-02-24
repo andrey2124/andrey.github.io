@@ -1,0 +1,140 @@
+<html >
+<head>
+<meta />
+<title>ИГРА</title>
+<link href="sss.css" rel="stylesheet" type="text/css" />
+<link href="css3.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="topPan"> <a href="#"></a>
+  <p align="center">Врачебные консультации</p>
+  <p></p>
+  <div id="topContactPan"> </div>
+  <div id="topMenuPan">
+    <div id="topMenuLeftPan"></div>
+    <div id="topMenuMiddlePan">
+      <ul>
+        <li><a href="html2.html"><span> Регестрация </a></span></li>
+        <li><a href="html3.html"><span> Фото  </a></span></li>
+        <li><a href="html1.html"><span> Новости </a></span></li>
+        <li><a href="html.html"><span> Видео </a></span></li>
+        <li><a href="index.html"><span> Главная </a></span></li>
+      </ul>
+    </div>
+    <div id="topMenuRightPan"></div>
+  </div>
+</div>
+<div id="bodyPan">
+  <div id="bodyLeftPan">
+    <h2><span>Фото</span> специалситов</h2>
+    <style>
+    div#rotator {position:relative; height:150px; margin-left: 15px;}
+div#rotator ul li {float:left; position:absolute; list-style: none;}
+div#rotator ul li.show {z-index:500;}
+</style>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+function theRotator() {
+	$('div#rotator ul li').css({opacity: 0.0});
+	$('div#rotator ul li:first').css({opacity: 1.0});
+	setInterval('rotate()',2300);
+} 
+function rotate() {	
+	var current = ($('div#rotator ul li.show')?  $('div#rotator ul li.show') : $('div#rotator ul li:first'));
+	var next = ((current.next().length) ? ((current.next().hasClass('show')) ? $('div#rotator ul li:first') :current.next()) : $('div#rotator ul li:first'));	
+	next.css({opacity: 0.0})
+	.addClass('show')
+	.animate({opacity: 1.0}, 1000);
+	current.animate({opacity: 0.0}, 1000)
+	.removeClass('show');
+};
+$(document).ready(function() {		
+	theRotator();
+});
+</script>
+</head>
+<body>
+<div id="rotator">
+  <ul>
+    <li class="show"><img src="images (1).jpg" width="400" height="300"  alt="pic1" /></a></li>
+    <li><img src="images (2).jpg" width="400" height="300"  alt="pic2" /></a></li>
+    <li><img src="images.jpg" width="400" height="300"  alt="pic3" /></a></li>
+    <li><img src="how-medical-schools-can-pick-the-right-students-to-be-doctors.jpg" width="400" height="300"  alt="pic3" /></a></li>
+    <li><img src="2c06177ff69f5d5d49693882793d4393.jpg" width="400" height="300"  alt="pic3" /></a></li>
+    <li><img src="vrachi3-640x427.jpg" width="400" height="300"  alt="pic3" /></a></li>
+    <li><img src="2017_11_29_82be36.jpg" width="400" height="300"  alt="pic3" /></a></li>
+  </ul>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    </p>
+    <h3><span></span> </h3>
+    <div id="bookcatagories">
+      <div ></div>
+      <div id="pricePan"></div>
+      <div id="discountPan"></div>
+      <div id="nameonePan">
+        <ul>   
+        </ul>
+      </div>
+      <div id="priceonePan">
+        <ul>
+        </ul>
+      </div>
+      <div id="discountonePan">
+        <ul>
+        </ul>
+      </div>
+    </div>
+    <div id="bodyLeftNextPan"></div>
+    </div>
+  </div>
+  <div id="bodyRightPan">
+    <h2><span>Услуги</span> </h2>
+    <ul>
+      <li type="disc"><a href="https://medportal.ru/">Бесплатная консультация</a> </li>
+      <li type="disc"><a href="https://medportal.ru/">Ваши заявки</a> </li>
+      <li type="disc"><a href="https://medportal.ru/">Поликлиники возле вас</a> </li>
+      <li type="disc"><a href="https://medportal.ru/">Безвредные лекарства</a> </li>
+      <li type="disc"><a href="https://medportal.ru/">Советы по поводу терапии</a> </li>
+    </ul>
+<br>
+    <div id="bodyRightPa">
+      <br>
+        <h2><span>Вопросы</spam> </h2>
+        <ul>
+          <li>Тут вы можете пообщаться<a href="https://medportal.ru/"> чат. </a> Там есть часто задаваемые вопросы</li>
+          <br>
+          <br>
+          <li>Так же вы можете поискать здесь<a href="https://medportal.ru/"> поиск </a> то что нужно. </li> 
+          <br>
+          
+          <li>Здесь есть более лучшие поликлиники<a href="https://medportal.ru/"> больницы.</a> </li>
+         
+        </ul>
+      </br>
+      </div>
+  </div>  
+</br>  
+</div>
+<div id="footermainPan">
+  <div id="footerPan">
+    <ul>
+<li><a href="html0.html">Миронович Андрей Юрьевич Группа 229283/3 Вариант шаблона 11</a> </li>
+   </ul>
+  </div>
+</div>
+</body>
+</html>
